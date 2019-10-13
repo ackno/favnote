@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   padding: 0;
@@ -7,10 +7,19 @@ const Button = styled.button`
   font-family: 'Montserrat';
   font-weight: 600;
   text-transform: uppercase;
-  background-color: ${({ secondary }) => (secondary ? '#E6E6E6' : '#FFD82B')};
-  width: ${({ secondary }) => (secondary ? '105px' : '220px')};
-  height: ${({ secondary }) => (secondary ? '30px' : '47px')};
-  font-size: ${({ secondary }) => (secondary ? '10px' : '16px')};
+  background-color: #ffd82b;
+  width: ${({ width }) => width || '220px'};
+  height: 47px;
+  font-size: 16px;
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      background-color: #e6e6e6;
+      width: 105px;
+      height: 30px;
+      font-size: 10px;
+    `}
 `;
 
 export default Button;

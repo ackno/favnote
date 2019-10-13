@@ -5,6 +5,7 @@ const Root = () => (
   <>
     <Button>Hello</Button>
     <Button secondary>world</Button>
+    <Button width="400px">Och</Button>
   </>
 );
 
