@@ -1,11 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
+
+const YellowButton = styled.button`
+  background-color: yellow;
+  padding: 20px;
+  font-size: 14px;
+`;
 
 const App = () => (
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        <YellowButton>Hello</YellowButton>
+      </p>
       <p>
         Edit <code>src/App.js</code>
         and save to reload.
