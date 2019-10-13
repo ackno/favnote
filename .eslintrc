@@ -4,7 +4,20 @@
     "jest": true,
     "es6": true
   },
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
