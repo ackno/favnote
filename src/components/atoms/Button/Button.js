@@ -7,7 +7,7 @@ const Button = styled.button`
   font-family: 'Montserrat';
   font-weight: 600;
   text-transform: uppercase;
-  background-color: ${({ color }) => color || 'hsl(49, 100%, 58%)'};
+  background-color: ${({ theme }) => theme.yellow || 'hsl(49, 100%, 58%)'};
   width: ${({ width }) => width || '220px'};
   height: 47px;
   font-size: 16px;
